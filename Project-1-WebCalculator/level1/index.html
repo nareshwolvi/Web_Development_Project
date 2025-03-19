@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator App Level 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/579e2daa99.js" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="page-container">
+            <!--logo-->
+            <img src="assets/casio.png" alt="logo" width="250px">
+        
+            <section class="calculator-section-container"> 
+                <h1>CALCULATOR</h1>
+                    <!-- background circle -->
+                     <div class="bg-circle">
+                        <!-- Main Calculator -->
+                         <div class="container">
+                            <!-- display -->
+                             <div class="display">
+                            <input 
+                            type="text" class="secondary-input" id="input" disabled>
+                            <input type="text" id="screen" class="primary-input" disabled>
+                         </div>
+                         
+                         <!-- button row1 -->
+                           <div class="row">
+                            <button class="btn btn-primary">AC</button>
+                            <button class="btn btn-primary" onclick="backspc()"><i class="fa-solid fa-delete-left"></i></button>
+                            <button class="btn btn-primary">%</button>
+                            <button class="btn btn-primary">÷</button>
+                           </div>
+
+                           <!-- button row2 -->
+                           <div class="row">
+                            <button class="btn">7</button>
+                            <button class="btn">8</button>
+                            <button class="btn">9</button>
+                            <button class="btn btn btn-primary">×</button>
+                           </div>
+
+                           <!-- button row3 -->
+                           <div class="row">
+                            <button class="btn">4</button>
+                            <button class="btn">5</button>
+                            <button class="btn">6</button>
+                            <button class="btn btn btn-primary">+</button>
+                           </div>
+
+                           <!-- button row4 -->
+                           <div class="row">
+                            <button class="btn">1</button>
+                            <button class="btn">2</button>
+                            <button class="btn">3</button>
+                            <button class="btn btn btn-primary">-</button>
+                           </div>
+
+                            <!-- button row5 -->
+                           <div class="row">
+                            <button class="btn btn-expanded" >0</button>
+                            <button class="btn">.</button>                           
+                            <button class="equal-btn" id="eval" onclick="getresult()">=</button>
+                           </div>
+                      </div>
+                  </div>
+            </section>
+            <!-- footer -->
+        <p class="copyright-text">&copy 2025 CASIO. All Rights Reserved.</p>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

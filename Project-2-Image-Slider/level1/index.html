@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Level 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1st section -->
+    <div class="page-header">
+        <img src="assets/logo/logo.jpg" alt="Logo" height="200px" width="200px">
+        <h1 class="Project-title">Image Slider</h1>
+    </div>
+
+    <!-- 2nd section -->
+    <section class="carousel-wrapper">
+        <!-- slides with next & previous button -->
+         <div class="carousel-slides-container">
+            <button class="prev-btn">
+                <img src="assets/icons/arrow-prev.svg" alt="prev-btn" onclick="changeslide(-1)">
+            </button>
+
+
+            <img class="carousel-slide" src="assets/images/slide1.avif" alt="slide 1">
+
+            <img class="carousel-slide" src="assets/images/slide2.avif" alt="slide 2">
+
+            <img class="carousel-slide" src="assets/images/slide3.jpeg" alt="slide 3">
+
+
+            <button class="next-btn">
+                <img src="assets/icons/arrow-next.svg" alt="next-btn" onclick="changeslide(1)">
+            </button>
+         </div>
+        
+         <!-- carousel dots -->
+          <div class="carousel-dots">
+            <span class="dot dot-active" onclick="currentslide(0)"></span>
+            <span class="dot" onclick="currentslide(1)"></span>
+            <span class="dot" onclick="currentslide(2)"></span>
+          </div>
+    </section>
+
+
+    <!-- 3rd Section -->
+        <p class="copyright-text">© 2025 Carsouel. All Rights Reserved.</p>
+
+    <!-- Importing Javascript fom script.js -->
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

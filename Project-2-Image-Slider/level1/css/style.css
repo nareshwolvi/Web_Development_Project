@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 50px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.page-header{
+    width: 100%;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.Project-title{
+    margin-top: 70px;
+    padding-right: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "poppins";
+}
+
+/* Carousel Style Starts */
+/* To align carousel at the cennter of the available space of viewport */
+
+.carousel-wrapper{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.carousel-slides-container{
+    width: fit-content;
+    position: relative;
+}
+
+.carousel-slide{
+    height: calc(100vh - 289px);
+    width: 100%;
+    border-radius: 6px;
+    display: none;
+    /* images going to adjust itself with parents*/
+    object-fit: contain; 
+}
+.prev-btn, .next-btn{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background: rgba(  255, 255, 255, 0.3);
+    border: none;
+    transform: translateY(-50%);
+}
+
+.prev-btn{
+    left: 16px;
+}
+.next-btn{
+    right: 16px;
+}
+
+.carousel-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    /* "display:inline" -> cannot use height & width*/
+    /* but in "display: inline-block" we can use height & width*/
+    display: inline-block;
+    cursor: pointer;
+    /* ease -> starting bit slow and ends fast */
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover{
+    background-color: #ce036a;
+}
+
+.dot-active{
+    background-color: #ce036a;
+}
+
+.copyright-text{
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins";
+    margin: 20px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    body{
+        padding: 30px;
+        padding-bottom: 20px;
+
+    }
+
+    .page-header{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .carousel-slide{
+        height: calc(100vh-319px);
+    }
+    .Project-title{
+        font-size: 32px;
+    }
+}
