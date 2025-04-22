@@ -22,10 +22,11 @@ body{
 .calculator-section-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 
+/* Selecting its 1st child */
 .calculator-section-container > h1{
     font-size: 80px;
     font-family: "poppins";
