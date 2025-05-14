@@ -70,7 +70,7 @@ background: #ffffff;
     box-sizing: border-box;
     background-color: transparent;
     border: none;
-       outline: none;
+    outline: none;
     text-align: right;
     font-weight: 600;
     color: #000;
@@ -138,5 +138,5 @@ background: #ffffff;
 }
 
 .copyright-text{
-    font-family: "poppins";
+    font-family: "Poppins";
 }

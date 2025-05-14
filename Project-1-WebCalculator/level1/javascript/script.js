@@ -12,6 +12,8 @@ for(const item of btn){
             input.value ="";
             screen.value="";
         }
+
+
         if(btntext === "AC"){
             btntext = "";
             screen.value ="";
@@ -27,6 +29,7 @@ for(const item of btn){
     });      
 }
 
+// It's Normal function how to returnEval() function
 const returnEval = (arg) =>{
     return eval(`"use strict"; (${arg})`);
 };
@@ -39,7 +42,7 @@ const getresult = () =>{
     screen.value = returnEval(screen.value);
 };
 
-
+// substring(START index, END index) -> It'll return the string values from start index to end index
 const backspc = () =>{
     screen.value = screen.value.substring(0,screen.value.length - 1);
 };
